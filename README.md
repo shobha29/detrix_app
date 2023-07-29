@@ -1,0 +1,1 @@
+# detrix_app
