@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
     marginRight: 37,
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: 13,
   },
   addBtn: {
     paddingVertical: 10,

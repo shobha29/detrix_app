@@ -23,7 +23,10 @@ const Profile = () => {
 
   const renderAboutModal = () => {
     return (
-      <TouchableOpacity onPress={() => null} style={styles.modalContent}>
+      <TouchableOpacity
+        onPress={() => null}
+        style={styles.modalContent}
+        activeOpacity={1}>
         <Text style={styles.roboto_20}>Information</Text>
 
         <View style={styles.header}>
@@ -32,7 +35,9 @@ const Profile = () => {
         </View>
         <View style={styles.modalCard}>
           <Text style={styles.roboto_14_200}>
-            {`This App is built to help you manage your finances and daily tasks with ease!\n\n`}<Text style={styles.bold}>{'Coming soon -'}</Text>{`\nTrack expenses, set budgets, receive notifications, and prioritise tasks with reminders.`}
+            {`This App is built to help you manage your finances and daily tasks with ease!\n\n`}
+            <Text style={styles.bold}>{'Coming soon -'}</Text>
+            {`\nTrack expenses, set budgets, receive notifications, and prioritise tasks with reminders.`}
           </Text>
         </View>
 
@@ -50,7 +55,10 @@ const Profile = () => {
 
   const renderSupportModal = () => {
     return (
-      <TouchableOpacity onPress={() => null} style={styles.modalContent}>
+      <TouchableOpacity
+        onPress={() => null}
+        style={styles.modalContent}
+        activeOpacity={1}>
         <Text style={styles.roboto_20}>Support</Text>
 
         <View style={styles.header}>
@@ -121,6 +129,7 @@ const Profile = () => {
           onRequestClose={onCloseModal}>
           <TouchableOpacity
             style={styles.modalContainer}
+            activeOpacity={1}
             onPress={onCloseModal}>
             {isOpenAboutModal ? renderAboutModal() : renderSupportModal()}
           </TouchableOpacity>
